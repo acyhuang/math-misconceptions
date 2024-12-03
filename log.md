@@ -1,19 +1,28 @@
 # My approach
 
-**Baseline**
+## EDA
+train_melted: 5607 answer options
+- no label: 1237
+- unique label: 747
+- trainable examples: 3623 (64.6%)
 
-- [ ] Try BERT on the dataset.
-- [ ] Try OpenAI o1 on a random sample of the dataset.
+## Baseline
 
-**Data processing**
+[X] **BERT**
 
-- [ ] Clean, normalize, stem text.
-- [ ] Create text representations using TF-IDF or word embeddings (Word2Vec?).
-- [ ] Perform symbol analysis to extract math equations.
+Reduced dataset size to 3623 examples
+- Removed examples with no label class
+- Removed examples where label class was represented less than 2 times (necessary for train and valid sets)
 
-**Model and architecture**
+Fine-tuned `bert-base-uncased` on 3 epochs, got <3% accuracy on validation set
 
-I’ll likely start with a simple logistic regression model to get another baseline result. My guess is that this will do very poorly given that there are so many classes and not many examples of each class. 
+
+[ ] **OpenAI o1**
+
+## Advanced
+
+
+**Ideas**
 
 Some other models I am considering based the sheer number of classes:
 Use tree based methods to create a hierarchy of classes
