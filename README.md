@@ -71,6 +71,7 @@ Once a correct label has been scored for an observation, that label is no longer
 [A, B, C, D, E]
 [A, A, A, A, A]
 [A, B, A, C, A]
+
 There is only one correct label per observation (hence no divisor term in front of the inner summation.)
 
 ## Submission File
