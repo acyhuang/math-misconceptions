@@ -3,3 +3,4 @@ models/
 .env
 kaggle/
 .venv
+__pycache__/
