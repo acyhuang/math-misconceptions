@@ -1,0 +1,2345 @@
+----------------------------------------------------------------------------------------------------
+
+QuestionID=643, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Multiplying and Dividing Negative Numbers
+Question: \( \frac{(-3) \times(-2)}{(-0.2)}= \)
+Answer: \( -3 \)
+
+RESPONSE
+Raw: The misconception is that the person incorrectly believes that the product of two negative numbers is negative, rather than positive, leading to an incorrect calculation of the numerator.
+Top 5 predictions:
+0.7347 | When a subtraction of one positive number from another, results in a negative answer, they believe the answer is the sum of those 2 numbers with a negative sign put in front.
+0.7028 | Believes dividing a negative by a negative gives a negative answer
+0.6836 | Believes multiplying two negatives gives a negative answer
+0.6794 | Believes dividing two positives will give a negative answer
+0.6746 | Believes multiplying two positives gives a negative answer
+
+ACTUAL, MAP@25: 0.0
+When dividing a decimal by a whole number, ignores decimal point and just divides the digits
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=267, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Laws of Indices
+Question: \( \left(5^{4}\right)^{3}= \)
+Answer: \( 125^{12} \)
+
+RESPONSE
+Raw: The misconception is confusing the multiplication of exponents with the multiplication of bases, leading to incorrectly raising the base to the power of the product of the exponents instead of correctly multiplying the exponents.
+Top 5 predictions:
+0.8168 | Thinks we have to add the base numbers as well as the powers when multiplying indices
+0.7230 | When multiplying numbers with different bases, multiplies the powers and multiplies the base numbers.
+0.6999 | Thinks powers with different bases cannot be equal
+0.6826 | When multiplying numbers with the same base, multiplies the powers 
+0.6653 | Thinks multiplying by a variable is the same as raising to the power of that variable
+
+ACTUAL, MAP@25: 0.0
+Has cubed the base number and the power
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1422, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Graphs of Exponentials and Other Powers of x
+Question: This is a part of the table of values for the equation \( \boldsymbol{y}=\mathbf{8}^{\boldsymbol{x}} \) \begin{tabular}{|l|c|}
+\hline\( x \) & \( \frac{1}{3} \) \\
+\hline\( y \) & \(\color{gold}\bigstar\) \\
+\hline
+\end{tabular} What should replace the star?
+Answer: \( \frac{8}{3} \)
+
+RESPONSE
+Raw: The misconception here is confusing the operation of exponentiation with multiplication, leading to the incorrect assumption that \( 8^{1/3} \) is equivalent to \( \frac{8}{3} \) instead of correctly recognizing it as the cube root of 8, which is 2.
+Top 5 predictions:
+0.6640 | Confuses cubic and exponential graphs
+0.6222 | Confuses cube rooting with squaring a number
+0.6044 | Mixes up square rooting and cube rooting
+0.5894 | Has multiplied by the root power
+0.5855 | Mistakes cube root for cubing the number
+
+ACTUAL, MAP@25: 0.0
+Multiplies by the index
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1074, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Factorising into a Single Bracket
+Question: Which of the following is a factor of: \( 6 n^{2}-9 \)
+Answer: \( 9 \)
+
+RESPONSE
+Raw: The misconception is confusing the process of factorization with simply identifying a numerical factor, leading to the incorrect belief that 9, a factor of the constant term, is a factor of the entire expression \( 6n^2 - 9 \) without considering the common factor of all terms.
+Top 5 predictions:
+0.6751 | Believes only the first term needs to be divided when factorising an expression
+0.6613 | Believes they can factorise a difference of two squares by placing the constant in both brackets without square rooting
+0.6438 | When asked for factors of an algebraic expression, thinks a term will be a factor
+0.6290 | When asked for factors of an algebraic expression, thinks any part of a term will be a factor
+0.6285 | Thinks factorising a quadratic means factorising the variable terms into a single bracket, and leaving out the constant
+
+ACTUAL, MAP@25: 0.3333333333333333
+When asked for factors of an algebraic expression, thinks a term will be a factor
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1329, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Adding and Subtracting Fractions
+Question: \(
+\frac{1}{3}+\frac{1}{10}=\frac{\bigstar}{30}
+\)
+What should replace the star?
+Answer: \( 4 \)
+
+RESPONSE
+Raw: The misconception is that the person incorrectly added the numerators and denominators separately, thinking \(\frac{1}{3} + \frac{1}{10} = \frac{1+1}{3+10} = \frac{2}{13}\), and then mistakenly scaled the denominator to 30 without properly finding a common denominator and adjusting the numerators accordingly.
+Top 5 predictions:
+0.6632 | When adding fractions, uses addition of the denominators as a common denominator
+0.6527 | When adding fractions, adds the numerators and denominators
+0.6514 | Believes you add the denominators when finding a fraction of another fraction
+0.6432 | When adding fractions, multiplies the numerators
+0.6412 | When adding fractions, adds the numerators and multiplies the denominators
+
+ACTUAL, MAP@25: 0.06666666666666667
+Does not find a common denominator when adding/subtracting fractions
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=17, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Ordering Negative Numbers
+Question: Which of these shows part of the proof that the sum of two odd numbers is even?
+Answer: \( \begin{array}{l}(2 n-1)(2 m+1) \\ =4 m n+2 n-2 m-1 \\ =2(2 m n-n-m)+1\end{array} \)
+
+RESPONSE
+Raw: The misconception is confusing the multiplication of two odd numbers with the addition of two odd numbers, as the proof provided incorrectly attempts to demonstrate the sum of two odd numbers by using a multiplication expression instead.
+Top 5 predictions:
+0.6649 | Doesn't recognise commutativity of addition with negative numbers
+0.6474 | Does not realise that subtracting a negative is the same as adding it's additive inverse
+0.6115 | Thinks multiplying two or more negative numbers together always gives a positive answer, regardless of how many negative numbers there are in the sum
+0.5970 | Does not recognise that addition is the inverse operation of subtraction
+0.5790 | Believes a negative number can be replaced with its positive equivalent when answering an addition problem from a numberline
+
+ACTUAL, MAP@25: 0.0
+Does not know the meaning of the word "sum"
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1647, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Writing Expressions
+Question: Which of the following is the correct way of writing: \( p \) divided by \( q \), then add \( 3 \) using algebraic convention?
+Answer: \( p-q+3 \)
+
+RESPONSE
+Raw: The misconception is confusing division with subtraction, leading to the incorrect interpretation of "divided by" as "minus."
+Top 5 predictions:
+0.7693 | Subtracts instead of divides when division is written as a fraction
+0.7685 | Thinks the division sign means to subtract
+0.7640 | Thinks a divide and a negative sign next to each other makes a minus
+0.7593 | Thinks the subtraction sign means divide
+0.7581 | Subtracts instead of divides
+
+ACTUAL, MAP@25: 0.07142857142857142
+Has used a subtraction sign to represent division
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=943, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Perpendicular Lines
+Question: Which of the following lines is perpendicular to
+\[
+y=2 x+1 \text { ? }
+\]
+Answer: \( x=2 y+1 \)
+
+RESPONSE
+Raw: The misconception is confusing the relationship between the slopes of perpendicular lines, mistakenly thinking that the equation \(x = 2y + 1\) represents a line with a slope that is the negative reciprocal of 2, instead of recognizing that the correct perpendicular slope should be \(-\frac{1}{2}\).
+Top 5 predictions:
+0.6687 | Believes switching the x and y variables in a linear equation gives a perpendicular line
+0.6259 | Believes the gradient of perpendicular lines just have opposite signs
+0.5992 | Confuses the meaning of parallel and perpendicular
+0.5972 | Believes the equation of a horizontal line is in the form x = ay, where a is the y intercept
+0.5934 | Confuses the lines y=x and y=-x
+
+ACTUAL, MAP@25: 1.0
+Believes switching the x and y variables in a linear equation gives a perpendicular line
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1248, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Compound Area
+Question: What is the area of the shaded section of this composite shape made from rectangles? ![A composite shape that makes a backwards "L" shape from 2 rectangles.  The base of the shape is horizontal and is 11cm long. The vertical height of the whole shape is 12cm. The horizontal width of the top part of the shape is 5cm. The vertical height of the bottom rectangle is labelled 4cm. The top rectangle is shaded.]()
+Answer: \( 60 \mathrm{~cm}^{2} \)
+
+RESPONSE
+Raw: The misconception likely arises from incorrectly calculating the area of the shaded section by multiplying the total height of the composite shape by the total base length, rather than isolating and calculating the dimensions of the shaded rectangle separately.
+Top 5 predictions:
+0.6879 | When calculating the area of a rectilinear compound shape, calculates the are of the surrounding rectangle
+0.6440 | When finding part of the area of a shape, subtracts from the side length before multiplying but still subtracts the unshaded area too.
+0.6337 | Believes the area of a rectangle is calculated by length add width
+0.6336 | Adds instead of subtracts when finding the area of part of a shape
+0.6331 | Has used slant height and base to find area rather than perpendicular height and base
+
+ACTUAL, MAP@25: 0.16666666666666666
+Beileves you can use the full length when finding an area of part of a composite shape, when part of the length is needed
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=712, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Function Machines
+Question: ![A function machine with 3 rectangles in a row, joined by arrows pointing from left to right. The first rectangle on the left is empty and says "input" above it. The middle rectangle has "+¼" written inside it and the final rectangle has "output" written above it and "8" written inside it.]() What is the input of this function machine?
+Answer: \( 2 \)
+
+RESPONSE
+Raw: The misconception is that the person incorrectly subtracted \( \frac{1}{4} \) from the output \( 8 \) instead of recognizing that the input should be \( 8 - \frac{1}{4} \), leading them to mistakenly calculate \( 8 - 6 = 2 \).
+Top 5 predictions:
+0.7031 | In a function machine, confuses an operation with the input
+0.6691 | Thinks that when you put an input into a function machine you apply the inverse operation rather than the operation given.
+0.6607 | In a function machine, confuses the first operation and the input
+0.6538 | When writing a function as a function machine confuses the input and the output.
+0.6445 | When using a function machine, confuses the input and the output.
+
+ACTUAL, MAP@25: 0.0
+Thinks the inverse of addition is multiplication
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=254, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Averages (mean, median, mode) from a List of Data
+Question: When calculating the mean of the following numbers which calculation will give the correct answer?
+\[
+0,1,3,4,7
+\]
+Answer: None of them
+
+RESPONSE
+Raw: The misconception is that the mean cannot be calculated from the given numbers, possibly due to misunderstanding the process of summing the numbers and dividing by the count of numbers.
+Top 5 predictions:
+0.7971 | When asked for the mean of a list of data, gives the median
+0.7763 | When calculating the mean from a list of data, adds up the numbers but does not divide
+0.7688 | Believes you divide 1 by the number of values, rather than the total, when finding the mean
+0.7460 | When asked for the mean of a list of data, gives the mode
+0.7149 | When asked for the mean of a list of data, does not count any zeros in the data when working out what to divide by
+
+ACTUAL, MAP@25: 0.06666666666666667
+Does not know how to calculate the mean
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1373, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Expanding Single Brackets
+Question: Multiply out the brackets: \( -3(m-2) \)
+Answer: \( 3 m+6 \)
+
+RESPONSE
+Raw: The misconception is failing to distribute the negative sign, leading to an incorrect multiplication of \(-3\) with both terms inside the brackets.
+Top 5 predictions:
+0.7100 | Ignores negative sign when expanding bracket
+0.7047 | Does not understand that the negative outside the bracket means answer will be negative
+0.7002 | When factorising into double brackets, believes the product of the constants in the brackets is of the opposite sign to the constant in the expanded equation.
+0.6718 | Believes that the sign changes when factorising an expression into single brackets
+0.6682 | When multiplying with negative numbers, assumes any negative sign can be ignored
+
+ACTUAL, MAP@25: 0.0
+Believes multiplying a positive by a negative gives a positive answer
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=672, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Types, Naming and Estimating
+Question: How many degrees are there in three-quarters of a turn?
+Answer: \( 90\degree \)
+
+RESPONSE
+Raw: The misconception is confusing a quarter turn with three-quarters of a turn, mistakenly equating three-quarters of a full 360-degree turn to a single 90-degree quarter turn.
+Top 5 predictions:
+0.7747 | Does not know that three quarters of a turn is 270 degrees
+0.6699 | Thinks there are 180 degrees in a full turn
+0.6402 | Believes there are 90 degrees in a full turn
+0.6197 | Confuses measures of turn (ie. degrees) and measures of length
+0.6174 | Thinks there are 60 degrees in a full turn
+
+ACTUAL, MAP@25: 0.0
+Finds the unit fraction when asked to find a non-unit fraction of an amount
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1840, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Ordering Fractions
+Question: What sign would make this statement true?
+\(
+\frac{4}{6} ? \frac{10}{15}
+\)
+Answer: \( < \)
+
+RESPONSE
+Raw: The misconception is that the person incorrectly believes that fractions with larger denominators are always smaller, without considering that \(\frac{4}{6}\) and \(\frac{10}{15}\) are equivalent fractions.
+Top 5 predictions:
+0.7520 | When comparing unit fractions believes that fractions with larger denominators are greater in size.
+0.7254 | Believes that fractions with larger denominators are greater in size
+0.6663 | believes that a fraction with the largest denominator will be smallest regardless of the numerator
+0.6468 | Mixes up smallest and largest when ordering fractions
+0.6289 | Believes that a fraction means dividing the denominator by the numerator
+
+ACTUAL, MAP@25: 0.5
+Believes that fractions with larger denominators are greater in size
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1711, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Quadratic Equations
+Question: Solve this equation, giving all solutions:
+\[
+k^{2}=4 k
+\]
+Answer: \( k=4 \)
+
+RESPONSE
+Raw: The misconception is failing to recognize that a quadratic equation can have more than one solution and neglecting to set the equation to zero and factor it, which would reveal the additional solution \( k=0 \).
+Top 5 predictions:
+0.6302 | Thinks the sign of solutions in a quadratic equation is always the same as the constant term
+0.6195 | Believes the solutions of a quadratic equation are the constants in the factorised form
+0.6185 | Believes that when factorising a quadratic equation with a coefficient of x squared, the two constants in the brackets are still the solutions of the equation with opposite signs
+0.5927 | Believes all quadratic equations have a solution of 0
+0.5865 | Does not realise a quadratic must be in the form ax^2+bx+c=0 to find the values for the quadratic formula
+
+ACTUAL, MAP@25: 0.0
+Believes they can divide by a variable without checking whether it could equal zero
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1398, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Cubics and Reciprocals
+Question: Which of the following is most likely to be the graph of a reciprocal function?
+Answer: ![A curved graph, an upside down symmetrical U shape. It starts in the bottom left, travels steeply up and right, turns at a point on the y-axis above the origin and travels steeply right and down.]()
+
+RESPONSE
+Raw: The misconception is confusing the graph of a reciprocal function, which typically has two branches in opposite quadrants and asymptotes, with the graph of a quadratic function, which is a parabola.
+Top 5 predictions:
+0.7716 | Confuses reciprocal and quadratic graphs
+0.7700 | confuses cubic and reciprocal graphs
+0.7173 | Believes a reciprocal graph comes from a cubic equation
+0.7018 | Believes a reciprocal equation will have a quadratic graph
+0.6920 | Confuses the graph of 1/x with 1/x² when both are shown
+
+ACTUAL, MAP@25: 1.0
+Confuses reciprocal and quadratic graphs
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=162, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Averages (mean, median, mode) from a List of Data
+Question: What is the median of the following numbers?
+\[
+3,5,6,18,18,-4
+\]
+Answer: \( 6 \)
+
+RESPONSE
+Raw: The misconception is likely due to incorrectly ordering the numbers or misunderstanding that the median is the middle value of an ordered list, leading to the incorrect selection of \( 6 \) instead of correctly ordering the numbers and finding the median.
+Top 5 predictions:
+0.7842 | Confuses the position of the median with its value
+0.7835 | When asked for the mean of a list of data, gives the median
+0.7502 | Finds the median instead of the mean
+0.7404 | Finds the mean instead of the median
+0.7205 | When finding which term represents the median, thinks you divide the total number of terms by 2
+
+ACTUAL, MAP@25: 0.1
+When finding the median from a even dataset does not understand we must find the midpoint of the two values in the middle
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=580, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Mental Multiplication and Division
+Question: Tom and Katie are discussing ways to calculate \( 59 \times 4 \) mentally
+Tom doubles \( 59 \) and then doubles the answer
+Katie does \( 60 \times 4 \) and then subtracts \( 4 \) from the answer
+Who would get the correct answer?
+Answer: Only
+Tom
+
+RESPONSE
+Raw: The misconception is that Katie's method of calculating \( 60 \times 4 \) and then subtracting \( 4 \) from the result is incorrect, when in fact it correctly adjusts for the initial overestimation by 1 unit of 4.
+Top 5 predictions:
+0.6648 | Thinks that doubling and then doubling again is not the same as multiplying by 4
+0.6572 | When performing mental multiplication, multiplies accurately by a multiple of 10 but then does not know how to adjust their answer 
+0.6446 | Does not realise that subtracting a larger number will give a smaller answer
+0.6281 | Does not realise that adding a larger number gives a larger answer
+0.6025 | Believes the smaller number is always subtracted from the larger, regardless of the order of the calculation
+
+ACTUAL, MAP@25: 0.05
+Does not think that the compensation strategy for the multiplication of 2 numbers is valid.
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1376, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Fractions of an Amount
+Question: What percentage of this shape is shaded? ![A bar split into 5 equal parts. 3 parts are shaded.]()
+Answer: \( 55 \% \)
+
+RESPONSE
+Raw: The misconception is confusing the fraction of the shape that is shaded, which is \(\frac{3}{5}\), with a percentage by incorrectly converting it to \(55\%\) instead of the correct \(60\%\).
+Top 5 predictions:
+0.7662 | Thinks that a larger shaded area represents a larger fraction
+0.7250 | Thinks a greater number of shaded parts represents a greater fraction
+0.7058 | Believes a smaller number of shaded parts represents a smaller fraction
+0.6883 | When asked to shade a fraction of a shape, gives the total number of parts rather than the number to be shaded.
+0.6201 | Does not see fraction diagrams as equivalent if the shading is in a different pattern
+
+ACTUAL, MAP@25: 0.0
+Estimated when not appropriate
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=365, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: 2D Names and Properties of Shapes-Others
+Question: Tom and Katie are discussing regular polygons. Tom says this is a regular polygon ![A triangle with 3 equal sides and 3 equal angles]() Katie says this is a regular polygon ![A parallelogram with 2 pairs of parallel sides marked]() Who is correct?
+Answer: Both Tom and Katie
+
+RESPONSE
+Raw: The misconception is that a parallelogram with two pairs of parallel sides is considered a regular polygon, when in fact, a regular polygon must have all sides and angles equal, which is not the case for a general parallelogram.
+Top 5 predictions:
+0.7499 | Thinks that only the sides need to be equal for a polygon to be regular
+0.7447 | Thinks that only the angles need to be the same for a polygon to be regular
+0.6659 | Does not believe a shape can have two correct names e.g. rectangle and parallelogram
+0.6572 | Believes a parallelogram has one pair of equal sides
+0.6482 | Believes a parallelogram cannot have right angles
+
+ACTUAL, MAP@25: 0.0
+Does not know the meaning of the word regular 
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=466, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Perpendicular Lines
+Question: \( -\frac{3}{4} \times \star=-1 \) What should replace the star?
+Answer: \( -\frac{4}{3} \)
+
+RESPONSE
+Raw: The misconception is that the person incorrectly believes that multiplying two negative numbers results in a negative product, rather than a positive one.
+Top 5 predictions:
+0.7030 | When a subtraction of one positive number from another, results in a negative answer, they believe the answer is the sum of those 2 numbers with a negative sign put in front.
+0.6770 | Believes multiplying two positives gives a negative answer
+0.6691 | Believes multiplying two negatives gives a negative answer
+0.6529 | Believes they can multiply/divide through by a negative number without changing the direction of the inequality
+0.6528 | When adding negatives believes that they can just add their absolute values and add a negative sign to the answer
+
+ACTUAL, MAP@25: 0.3333333333333333
+Believes multiplying two negatives gives a negative answer
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=963, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Written Multiplication
+Question: Which working out is correct for $72 \times 36$?
+Answer: ![ Long multiplication for 72 multiplied by 36 with incorrect working and incorrect final answer. First row of working is incorrect: 4 2 2. Second row of working is incorrect: 2 7. Final answer is incorrect: 4 4 9.]()
+
+RESPONSE
+Raw: The misconception likely involves misunderstanding the place value alignment and addition of partial products in long multiplication, leading to incorrect intermediate steps and a final answer.
+Top 5 predictions:
+0.6966 | Believes that product means add rather than multiply
+0.6719 | Thinks they start on the left when doing long multiplication 
+0.6625 | Confuses the order of operations, believes addition comes before multiplication 
+0.6397 | Thinks a variable next to a number means addition rather than multiplication
+0.6382 | Does not realise that multiplication can be broken down into factors
+
+ACTUAL, MAP@25: 0.07692307692307693
+When two digits multiply to 10 or more during a multiplication problem, does not add carried value to the preceding digit
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=640, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Angles in Triangles
+Question: What is the size of angle \( k \) ? ![A triangle with one angle of 40 degrees. One angle of 32 degrees and the third angle is labelled k. ]()
+Answer: \( 90\degree\)
+
+RESPONSE
+Raw: The misconception is that the sum of angles in a triangle includes a right angle by default, leading to the incorrect assumption that one of the angles must be \( 90\degree \).
+Top 5 predictions:
+0.7729 | Does not consider that all three angles in a triangle sum to 180 degrees
+0.7452 | Does not know that angles in a triangle sum to 180 degrees
+0.6870 | Does not know that a right angle is 90 degrees
+0.6825 | Does not know that angles on a straight line sum to 180 degrees
+0.6787 | Believes angles in a triangle sum to 360 degrees
+
+ACTUAL, MAP@25: 0.06666666666666667
+Believes all triangles have a right angle
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1701, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Parts of a Circle
+Question: What is the correct name for the line marked on the circle? ![\( \theta \)]()
+Answer: Tangent
+
+RESPONSE
+Raw: The misconception is confusing a line that touches the circle at exactly one point (a tangent) with a line that lies entirely within the circle, such as a radius or diameter.
+Top 5 predictions:
+0.6184 | Confuses tangent and circumference
+0.6072 | Confuses tangent and radius
+0.5964 | Thinks a chord does not have to start and end at the circumference of the circle.
+0.5497 | Confuses tangent and chord
+0.5489 | Does not realise that all circles are similar
+
+ACTUAL, MAP@25: 0.25
+Confuses tangent and chord
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=440, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Temperature units
+Question: What temperature does the thermometer show? ![A thermometer showing the temperature in degrees Celsius. There are five steps on the scale between 10 and 0, and five steps between 0 and -10. The temperature is shown at 4 steps below 0.]()
+Answer: \( -9^{\circ} \mathrm{C} \)
+
+RESPONSE
+Raw: The misconception is misunderstanding the scale of the thermometer, leading to the incorrect assumption that each step represents 2 degrees instead of 1 degree, resulting in the incorrect calculation of the temperature as \(-9^{\circ} \mathrm{C}\) instead of the correct \(-4^{\circ} \mathrm{C}\).
+Top 5 predictions:
+0.5353 | Mixes up colder and hotter when comparing temperatures
+0.4897 | Misreads scale
+0.4643 | Mistakes unit of speed for unit of time
+0.4519 | Has used the wrong data point on the graph
+0.4457 | Confuses the lines y=x and y=-x
+
+ACTUAL, MAP@25: 0.0
+When reading integers on a number line, assumes each dash is 1
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1646, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Basic Angle Facts (straight line, opposite, around a point, etc)
+Question: Which of the following statements can you prove from this diagram? ![Angles around a point split into three parts with the parts labelled: m+50, 2m+n and 220-2m]()
+Answer: \( m+n=270 \)
+
+RESPONSE
+Raw: The misconception likely stems from incorrectly assuming that the sum of angles around a point is 270 degrees, rather than the correct total of 360 degrees.
+Top 5 predictions:
+0.7875 | Does not know that angles around a point sum to 360
+0.7601 | Believes angles on a straight line add to 360 degrees
+0.7422 | Thinks that all angles anywhere along a straight line add to 180
+0.7354 | Believes angles around a point sum to 180
+0.7171 | Believes 180 degrees is an obtuse angle
+
+ACTUAL, MAP@25: 0.0
+Does not use angle facts when setting up an equation from an angle diagram
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1796, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Angles in Triangles
+Question: What is the size of angle \( k \) ? ![A triangle with two labelled interior angles. One angle is 65 degrees. One angle is k degrees. The third angle has no label.]()
+Answer: \( 90\degree\)
+
+RESPONSE
+Raw: The misconception is that the person incorrectly assumes that one of the angles in any triangle must be \( 90\degree \), confusing the properties of right triangles with those of triangles in general.
+Top 5 predictions:
+0.6917 | Does not know that a right angle is 90 degrees
+0.6746 | Believes all triangles have a right angle
+0.6469 | Confuses right angle triangles and equilateral triangles
+0.6376 | Misinterprets the meaning of angles on a straight line angle fact
+0.6350 | Believes isosceles triangles cannot have right angles
+
+ACTUAL, MAP@25: 0.5
+Believes all triangles have a right angle
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=525, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Adding and Subtracting Fractions
+Question: \( 2 \frac{7}{10}+2 \frac{1}{4}= \) Leave your answer as a mixed number
+Answer: \( \frac{99}{20} \)
+
+RESPONSE
+Raw: The misconception likely involves incorrectly adding the whole numbers and fractions separately without properly finding a common denominator for the fractional parts before adding them.
+Top 5 predictions:
+0.6984 | When adding an integer to a fraction, thinks you add the integer to the numerator
+0.6948 | When asked to add fractions uses the method for multiplying fractions instead.
+0.6885 | Does not consider the denominator when adding/ subtracting fractions. Adds/subtracts the numerator and makes the denominator the one with the highest value.
+0.6884 | Thinks finding a fraction of an amount means subtracting from that amount
+0.6838 | When dividing an integer by a fraction, thinks they can just multiply instead.
+
+ACTUAL, MAP@25: 0.0
+Confused mixed numbers with improper fractions
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=619, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Factors and Highest Common Factor
+Question: A Zumba teacher wants to split her group of \( 60 \) clients into equal sized classes.
+To do this she needs to know the _________ of \( 60 \)
+Which word best fills in the gap?
+Answer: Multiples
+
+RESPONSE
+Raw: The misconception is confusing "multiples" with "factors," as the teacher needs to know the factors of 60 to divide the clients into equal-sized classes, not the multiples.
+Top 5 predictions:
+0.6648 | Confuses factors and multiples
+0.6525 | Does not realise that division can be broken down into factors
+0.6085 | Does not understand that factors are divisors which split the number into equal groups
+0.6010 | Does not realise that multiplication can be broken down into factors
+0.5945 | Confuses prime factors and factors
+
+ACTUAL, MAP@25: 1.0
+Confuses factors and multiples
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1062, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Written Division
+Question: Find the value of \( P \). ![Horizontal green bar divided into 5 equal sections. Each section is labelled with a "P". Curly bracket shows that 3 of the sections sum to 615.]()
+Answer: \( 1845 \)
+
+RESPONSE
+Raw: The misconception is that the student incorrectly multiplied the total sum of 615 by the number of sections (3) instead of dividing 615 by 3 to find the value of \( P \).
+Top 5 predictions:
+0.5285 | In a worded problem, does not complete all calculations
+0.5268 | Misinterprets the order of division in worded problems
+0.5121 | Done a different calculation to the one given
+0.5000 | Thinks the number in the ratio is the total
+0.4882 | Multiplies instead of divides to find one part given the total
+
+ACTUAL, MAP@25: 0.2
+Multiplies instead of divides to find one part given the total
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=66, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Adding and Subtracting with Decimals
+Question: \( 4.72-3.1 \) What should replace the star?
+Answer: \( 4.41 \)
+
+RESPONSE
+Raw: The misconception likely involves incorrectly aligning the decimal points during subtraction, leading to an error in subtracting the tenths place.
+Top 5 predictions:
+0.7532 | When subtracting decimals with a different number of decimal places, lines up the digits incorrectly
+0.7315 | Out by 10 when subtracting
+0.7000 | Does not realise that subtracting a larger number will give a smaller answer
+0.6969 | Thinks that when adding decimals with a different number of decimal places, you should line up the digits to the right 
+0.6756 | Treats zero as a ten when subtracting
+
+ACTUAL, MAP@25: 0.0
+Hasn't lined up the place value columns when writing out the calculation
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1698, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Sequences-Others
+Question: If the first term of a sequence is \( 100 \) and the term-to-term rule is \( -5 \), what is the \( 10^{\text {th }} \) term in this sequence?
+Answer: \( 50 \)
+
+RESPONSE
+Raw: The misconception is that the person incorrectly applied the term-to-term rule by adding \( -5 \) to the first term instead of subtracting \( 5 \) from each subsequent term, leading them to mistakenly calculate the \( 10^{\text{th}} \) term as \( 50 \) instead of correctly subtracting \( 5 \) nine times from \( 100 \).
+Top 5 predictions:
+0.6135 | Thinks the first term in a sequence is the term before the sequence begins (0th term)
+0.6134 | Goes the wrong direction in the sequence when identifying term-to-term rule
+0.6103 | Only uses two terms of a sequence to work out a term-to-term rule
+0.6037 | Thinks the nth term is when the value of the term is n
+0.6005 | When asked for the next term in the sequence subtracts one from the last term given, despite the sequence not going down in ones.
+
+ACTUAL, MAP@25: 0.0
+When asked for a specific term in a sequence gives the term after
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=731, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Squares, Cubes, etc
+Question: Which of the following numbers is a cube number?
+Answer: \( 3 \)
+
+RESPONSE
+Raw: The misconception is confusing cube numbers with cube roots, leading to the incorrect belief that a single-digit number like 3 can be a cube number, rather than recognizing that cube numbers are the result of raising integers to the power of three.
+Top 5 predictions:
+0.7614 | Believes cube numbers are just multiples of 3
+0.7117 | Has confused cube numbers with prime numbers
+0.6951 | Mixes up square numbers and cube numbers
+0.6761 | Thinks cube numbers are triangular numbers
+0.6708 | Mistakes cube root for cubing the number
+
+ACTUAL, MAP@25: 0.09090909090909091
+Mixes up cubing and multiplying by 3
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=301, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Basic Angle Facts (straight line, opposite, around a point, etc)
+Question: What is the size of angle \( x \) ? ![Angles around a point, split into 2 parts. One is labelled 310 degrees and the other x.]()
+Answer: \( 310^{\circ} \)
+
+RESPONSE
+Raw: The misconception is that the person incorrectly believes that angles around a point add up to \( 360^{\circ} \) and mistakenly thinks that one of the angles can be equal to the given angle of \( 310^{\circ} \) without considering the sum of all angles around the point.
+Top 5 predictions:
+0.6614 | Does not know that angles around a point sum to 360
+0.6377 | Misinterprets the meaning of angles on a straight line angle fact
+0.6227 | Believes angles on a straight line add to 360 degrees
+0.6145 | Thinks that all angles anywhere along a straight line add to 180
+0.6072 | Does not know that angles on a straight line sum to 180 degrees
+
+ACTUAL, MAP@25: 0.0
+Incorrectly identifies angles as vertically opposite
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=332, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Linear Equations
+Question: Tom and Katie are discussing how to solve:
+\(
+\frac{x}{3}-5=12
+\)
+
+Tom says a correct next line of working could be: \( \frac{x}{3}=17 \)
+
+Katie says a correct next line of working could be: \( x-5=36 \)
+Who is correct?
+Answer: Both Tom and Katie
+
+RESPONSE
+Raw: The misconception is that both Tom and Katie's steps are correct, when in fact only Tom's step is correct; Katie incorrectly multiplies the entire equation by 3 instead of just the term \(\frac{x}{3}\).
+Top 5 predictions:
+0.6251 | When solving an equation thinks they add when in fact they need to multiply
+0.6090 | When solving an equation thinks they divide when in fact they need to multiply
+0.5902 | Does not understand that when multiplying both sides of an equation by an amount every term must be multiplied by the same amount
+0.5774 | When solving an equation, multiplies instead of adding
+0.5702 | When solving an equation with a fraction, thinks you don't need to multiply every term on both sides when multiplying by the denominator 
+
+ACTUAL, MAP@25: 0.3333333333333333
+Does not understand that when multiplying both sides of an equation by an amount every term must be multiplied by the same amount
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1012, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Multiplying Terms
+Question: Which of the following expressions is equivalent to:
+\(
+\left(2 p^{2}\right)^{3}
+\)
+Answer: \( 8 p^{2} \)
+
+RESPONSE
+Raw: The misconception is failing to correctly apply the power of a power rule, which states that when raising a power to another power, you multiply the exponents, leading to the incorrect simplification of \( (2p^2)^3 \) as \( 8p^2 \) instead of the correct \( 8p^6 \).
+Top 5 predictions:
+0.6839 | Does not realize we can simplify a term that involves powers
+0.6029 | Multiplied the powers rather than added them
+0.6023 | When a variable in an expression has a power, thinks the power applies to the whole expression
+0.5932 | Does not realise multiplying a variable by itself results in a power of that variable
+0.5839 | When squaring a variable with a power, thinks that the power is squared rather than doubled. 
+
+ACTUAL, MAP@25: 0.1
+Thinks that when raising a variable with a coefficient to a power, only the coefficient is affected by the power
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=166, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Multiplying and Dividing Algebraic Fractions
+Question: STEP \( 2 \)
+Which of the options is a correct second step to express the following as a single fraction?
+
+\(
+\begin{aligned}
+& \frac{x-1}{6} \div \frac{x^{2}-1}{9} \\
+= & \frac{x-1}{6} \times \frac{9}{x^{2}-1}
+\end{aligned}
+\)
+Answer: \( \frac{-1}{6} \times \frac{9}{x-1} \)
+
+RESPONSE
+Raw: The misconception likely involves incorrectly simplifying or canceling terms in the algebraic fractions, specifically misunderstanding that \(x^2 - 1\) can be factored as \((x-1)(x+1)\) and mistakenly canceling \(x-1\) from both the numerator and denominator without considering the entire expression.
+Top 5 predictions:
+0.7609 | Incorrectly cancels what they believe is a factor in algebraic fractions
+0.6913 | Thinks you can divide terms by different factors when simplifying an algebraic fraction
+0.6466 | Thinks you can ignore the variable when simplifying algebraic fractions
+0.6390 | Does not understand how to subtract algebraic fractions
+0.6131 | Believes squaring a fraction requires you to double both parts
+
+ACTUAL, MAP@25: 1.0
+Incorrectly cancels what they believe is a factor in algebraic fractions
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=207, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Expanding Single Brackets
+Question: \(
+x(3 x-5)+6(2 x-3) \equiv P x^{2}+Q x+R
+\)
+
+What is the value of \( R \) ?
+Answer: \( -23 \)
+
+RESPONSE
+Raw: The misconception likely involves incorrectly distributing the constants through the brackets and combining like terms, particularly errors in calculating the constant term by not properly multiplying and adding the constant parts of the expressions.
+Top 5 predictions:
+0.7846 | When factorising into double brackets, believes the product of the constants in the brackets is of the opposite sign to the constant in the expanded equation.
+0.6523 | Believes they can ignore the coefficient when expanding double brackets 
+0.6488 | Believes the constant in an expanded quadratic comes from adding the two numbers in the brackets
+0.6406 | When completing the square, believes the constant in the bracket is double the coefficient of x
+0.6363 | Believes they must expand brackets before solving an equation
+
+ACTUAL, MAP@25: 0.0
+Believes you can add or subtract from inside brackets without expanding when solving an equation
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=872, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Square Roots, Cube Roots, etc
+Question: \( 11^{2}= \)
+Answer: \( 112 \)
+
+RESPONSE
+Raw: The misconception is confusing the operation of squaring a number with simply appending the digit '2' to the original number, rather than multiplying the number by itself.
+Top 5 predictions:
+0.8066 | Believes squaring is the same as adding two
+0.7824 | Mixes up squaring with dividing by 2
+0.7767 | Mixes up squaring and multiplying by 2 or doubling, and not square rooted
+0.7643 | Confuses square rooting and halving the number
+0.7539 | Mixes up squaring and multiplying by 2 or doubling
+
+ACTUAL, MAP@25: 0.0
+Writes the index as a digit on the end of a number
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1609, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Rotational Symmetry
+Question: ![\( \nabla \)]() What is the order of rotational symmetry of this shape?
+Answer: \( 9 \)
+
+RESPONSE
+Raw: The misconception is confusing the number of sides or vertices of a shape with its order of rotational symmetry, leading to the incorrect assumption that a shape with nine sides or vertices has an order of rotational symmetry of nine.
+Top 5 predictions:
+0.6971 | Believes the number of sides gives the order of rotational symmetry
+0.6864 | Does not connect rotational symmetry to number of sides/vertices
+0.5852 | Gives one fewer order of rotational symmetry than there is
+0.5730 | Thinks rectangles have rotational symmetry or order 4
+0.5707 | Believes if shapes have rotational symmetry they must have line symmetry
+
+ACTUAL, MAP@25: 0.0
+Does not know how to find order of rotational symmetry
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=822, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Graphs of Exponentials and Other Powers of x
+Question: Which of the following is most likely to be the graph of a exponential function?
+Answer: ![A curved graph, an upside down symmetrical U shape. It starts in the bottom left, travels steeply up and right, turns at a point on the y-axis above the origin and travels steeply right and down.]()
+
+RESPONSE
+Raw: The misconception is confusing the graph of an exponential function with that of a quadratic function, as the described graph is a parabola, which is the shape of a quadratic function, not an exponential function.
+Top 5 predictions:
+0.8281 | Confuses quadratic and exponential graphs
+0.7195 | Confuses cubic and exponential graphs
+0.6837 | Confuses reciprocal and exponential graphs
+0.5995 | Confuses the graph of a linear equation with a quadratic equation
+0.5969 | Confuses cubic and quadratic graphs
+
+ACTUAL, MAP@25: 1.0
+Confuses quadratic and exponential graphs
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=820, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Rounding to the Nearest Whole (10, 100, etc)
+Question: A distance has been rounded to the nearest \( \mathrm{km} \), giving \( 106 \) \( \mathrm{km} \).
+Which of these values could the distance \( \underline{not} \) be?
+Answer: \( 106220 \mathrm{~m} \)
+
+RESPONSE
+Raw: The misconception is confusing rounding to the nearest kilometer with rounding to the nearest meter, leading to the incorrect belief that a distance of \( 106220 \mathrm{~m} \) (which is \( 106.22 \mathrm{~km} \)) could not round to \( 106 \mathrm{~km} \).
+Top 5 predictions:
+0.6423 | Thinks there are 100m and a km
+0.6275 | Believes that rounding must change the number
+0.6199 | Thinks there are 10m in a km
+0.6149 | Rounds to the wrong degree of accuracy (1 decimal place rather than nearest whole number)
+0.6139 | Thinks there are 1000mm in a km
+
+ACTUAL, MAP@25: 0.0
+Rounds up instead of down
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=591, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Surface Area of Prisms
+Question: Which calculation would give you the area of the face of this cuboid labelled \( Q \) ('the top')? ![A cuboid with dimensions 6cm by 3cm by 4 cm. The top face Q is marked. It is a rectangle with dimensions 6cm by 3cm.]()
+Answer: \( 6 \mathrm{~cm} \times 4 \mathrm{~cm} \)
+
+RESPONSE
+Raw: The misconception is confusing the dimensions of the cuboid's faces, mistakenly using the length and height (6 cm and 4 cm) instead of the length and width (6 cm and 3 cm) for the top face \( Q \).
+Top 5 predictions:
+0.6727 | Believes volume of a cuboid is the area of the three unique faces multiplied together
+0.6287 | Believes you find the surface area of a prism by finding the total area of the unique faces
+0.6276 | Believes a missing length on a cuboid can be found by doing volume divided by a different length
+0.5988 | Mixes up cubes and cuboids
+0.5950 | Does not know how to calculate the volume of a prism
+
+ACTUAL, MAP@25: 0.045454545454545456
+Cannot identify the correct side lengths to use when asked to find the area of a face
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=531, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Multiples and Lowest Common Multiple
+Question: If you list the multiples of \( 15 \) in ascending order, what is the \( 5^{\text {th }} \) number in the list?
+Answer: \( 90 \)
+
+RESPONSE
+Raw: The misconception is confusing the sequence of multiples of \( 15 \) with the sequence of multiples of \( 18 \), as \( 90 \) is the \( 5^{\text{th}} \) multiple of \( 18 \) instead of \( 15 \).
+Top 5 predictions:
+0.5435 | forgets to include the common factors when calculating the lowest common multiple
+0.5278 | Finds a common multiple but not the lowest common multiple
+0.5100 | Believes the lowest common multiple is found my multiplying the numbers together
+0.5089 | Believes finding the product of two numbers gives their lowest common multiple
+0.5042 | Does not understand that a number is divisible by the factors of its factors
+
+ACTUAL, MAP@25: 0.07692307692307693
+Believes the first multiple of a is 2a
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=443, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Venn Diagrams
+Question: In which region would \( \mathbf{3 6} \) belong? ![A Venn diagram with two sets, one labelled Square number and one labelled Odd number. Square Number without the intersection is labelled A, Odd Number without the intersection is labelled C, the intersection of the two sets is labelled B, and outside the circles is labelled D.]()
+Answer: C
+
+RESPONSE
+Raw: The misconception is that the number 36 is mistakenly identified as an odd number, leading to the incorrect placement in region C, which represents numbers that are odd but not square numbers.
+Top 5 predictions:
+0.6507 | Confuses the value outside of a Venn diagram as the total number of entries in the diagram
+0.6497 | Confuses the number of regions in a Venn diagram as the total number of entries in the diagram
+0.6454 | Mixes up the sets in a Venn diagram
+0.6168 | Includes the intersection of a Venn diagram when asked to find the value of a set only
+0.6084 | Believes the intersection in a prime factor venn diagram does not contribute to the size of the number represented by a circle 
+
+ACTUAL, MAP@25: 0.0
+Mixes up odd and even numbers
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=126, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Compound Area
+Question: What is the area of the shaded section of this composite shape made from rectangles? ![A composite shape made from two rectangles that form an "L" shape.  The base of the shape is horizontal and is 13cm long. The vertical height of the whole shape is 14cm. The horizontal width of the top part of the shape is 6cm. The vertical height of the top rectangle is 8cm. The right handed rectangle is shaded blue]()
+Answer: \( 104 \mathrm{~cm}^{2} \)
+
+RESPONSE
+Raw: The misconception likely involves incorrectly calculating the area of the shaded section by mistakenly using the total area of the entire composite shape instead of subtracting the area of the unshaded section.
+Top 5 predictions:
+0.6681 | When finding part of the area of a shape, subtracts from the side length before multiplying but still subtracts the unshaded area too.
+0.6613 | Adds instead of subtracts when finding the area of part of a shape
+0.6147 | Thinks that a larger shaded area represents a larger fraction
+0.6097 | When calculating the area of a rectilinear compound shape, calculates the are of the surrounding rectangle
+0.6071 | Miscounts the area of a shape when there are half squares
+
+ACTUAL, MAP@25: 0.0
+Uses an incorrect side length when splitting a composite shape into parts
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=135, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Converting between Fractions and Decimals
+Question: Complete the missing value. ![A circle with two other circles below it, connected to the top circle by lines. The top circle has 60% in, one of the bottom circles has 2/5, and the other is blank.]()
+Answer: \( 60 \% \)
+
+RESPONSE
+Raw: The misconception is confusing percentages with fractions and decimals, leading to the incorrect assumption that the missing value should also be expressed as a percentage rather than converting 60% to its equivalent fraction or decimal form.
+Top 5 predictions:
+0.6740 | Does not understand a percentage is out of 100
+0.6704 | Believes percentages cannot be converted into fractions
+0.6556 | Believes a fraction out of a number other than 100 represents a percentage
+0.6480 | Thinks they can convert percentages to fractions by writing the percentage value as both the numerator and the denominator
+0.6406 | Thinks they just remove the decimal point when converting a decimal to a percentage
+
+ACTUAL, MAP@25: 0.0
+Believes to complete a part whole model you select a value already given in the model
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1526, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Adding and Subtracting Fractions
+Question: The fractions in the two circles below add to give the fraction in the circle above.
+
+What should replace the question mark? ![Two circles containing the fractions 3/5 and 2/7, both linked to a third circle above]()
+Answer: \( \frac{5}{12} \)
+
+RESPONSE
+Raw: The misconception is that the student incorrectly adds the numerators and denominators separately, rather than finding a common denominator to add the fractions properly.
+Top 5 predictions:
+0.7305 | When adding fractions, uses addition of the denominators as a common denominator
+0.7168 | Does not find a common denominator when adding/subtracting fractions
+0.7087 | Believes you add the denominators when finding a fraction of another fraction
+0.6927 | When adding fractions, changes to common denominator but leaves numerators the same
+0.6911 | Believes a common denominator must always be the two denominators multiplied together
+
+ACTUAL, MAP@25: 0.16666666666666666
+When adding fractions, adds the numerators and denominators
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=782, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Simplifying Fractions
+Question: Simplify fully (if possible): \( \frac{45}{60} \)
+Answer: \( \frac{9}{12} \)
+
+RESPONSE
+Raw: The misconception is that the person incorrectly reduced the fraction by dividing both the numerator and the denominator by 5 instead of the greatest common divisor, which is 15.
+Top 5 predictions:
+0.6652 | Incorrectly cancels what they believe is a factor in algebraic fractions
+0.6647 | When rationalising the denominator, confuses the numerator with the denominator
+0.6459 | Does not fully simplify fraction
+0.6440 | Does not recognise when simplifying a fraction may be helpful
+0.6399 | Does not understand how to simplify fractions
+
+ACTUAL, MAP@25: 0.3333333333333333
+Does not fully simplify fraction
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=399, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Substitution into Formula
+Question: When \( h=10 \)
+Which of the following pairs of statements is true?
+Answer: \( \begin{array}{l}3 h^{2}=900 \\ (3 h)^{2}=900\end{array} \)
+
+RESPONSE
+Raw: The misconception is confusing the expression \(3h^2\) with \((3h)^2\), leading to the incorrect assumption that both expressions are equal when substituting \(h = 10\).
+Top 5 predictions:
+0.5706 | Mixes up the value of two terms when substituting
+0.5412 | Does not add on the constant in a worded substitution problem
+0.5410 | When substituting into an algebraic term, believes they can disregard the coefficient
+0.5405 | Uses base instead of height as h in area of a trapezium formula
+0.5398 | When substituting into an algebraic term, replaces variables with numbers without multiplying.
+
+ACTUAL, MAP@25: 0.0
+Multiplies before applying a power 
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=647, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Operations with Surds
+Question: \(9 \times \sqrt{3}\)
+
+Simplify, if possible.
+Answer: Cannot be simplified
+
+RESPONSE
+Raw: The misconception is that the expression \(9 \times \sqrt{3}\) cannot be simplified because the person incorrectly believes that simplification only involves rationalizing or reducing surds, not realizing that the expression is already in its simplest form as a product of a rational number and a surd.
+Top 5 predictions:
+0.6690 | Does not recognise that an integer multiplied by a surd can be simplified
+0.6359 | Does not recognise when a surd can be simplified
+0.6262 | Does not recognise that a surd will simplify to a whole number and not longer be a surd if the number under the surd is a square number
+0.6164 | When simplifying surds, does not understand that the simplified root is what is left after dividing out the largest square number
+0.6049 | When simplifying surds, does not multiply the number in front of the surd with the square root of the largest square number that has been removed from the surd
+
+ACTUAL, MAP@25: 1.0
+Does not recognise that an integer multiplied by a surd can be simplified
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1559, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Congruency in Other Shapes
+Question: Tom and Katie are discussing congruent shapes Tom says these two shapes are congruent ![Two identical 6-sided "L shape" polygons. One of the polygons has been rotated through 90 degrees.]() Katie says these two shapes are congruent ![Two 6-sided "L shape" polygons. One of the polygons has a wider upright section than the other.]() Who is correct?
+Answer: Neither is correct
+
+RESPONSE
+Raw: The misconception is that congruent shapes must have the same orientation or identical dimensions, when in fact congruent shapes can be rotated or reflected versions of each other as long as they have the same size and shape.
+Top 5 predictions:
+0.7991 | Thinks congruent shapes are the same shape but can be different sizes
+0.7873 | Does not understand that shapes are congruent if they have the same size and shape
+0.6503 | Does not understand that similar shapes and enlarged shapes will have the same size angles as the original
+0.6073 | Does not know that a reflection would not change the size of the shape
+0.5958 | Does not understand that all angles and sides must be equal for regular shapes
+
+ACTUAL, MAP@25: 0.5
+Does not understand that shapes are congruent if they have the same size and shape
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1288, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Simultaneous Equations
+Question: Which of the following pairs of simultaneous equations would have no solutions?
+\begin{array}{ccc} 
+Pair \( 1 \) & Pair \( 2 \) \\
+\( 2 y-2 x=7 \) & & \( 2 x+2 y=7 \) \\
+\( 2 x-2 y=7 \) & & \( 2 x-2 y=7 \)
+\end{array}
+Answer: Both Pair \( 1 \) and Pair \( 2 \)
+
+RESPONSE
+Raw: The misconception is that the student believes both pairs of equations are parallel and therefore have no solutions, without recognizing that Pair 2 actually consists of two equations that are not parallel and thus have a unique solution.
+Top 5 predictions:
+0.6660 | When solving simultaneous equations thinks that identical terms in given equations can be eliminated by either adding or subtracting.
+0.6532 | When solving simultaneous equations, thinks they can ignore one of the variables
+0.6393 | When solving simultaneous equations, believes the terms must be of opposite signs in order to be eliminated.
+0.6275 | When solving simultaneous equations, believes the terms must have the same sign in order to be eliminated.
+0.6210 | When solving a pair of simultaneous equations, thinks they need to make the coefficients of both variables the same
+
+ACTUAL, MAP@25: 0.0
+Believes 0 is not a real solution to an equation
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=136, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Multiplying and Dividing Negative Numbers
+Question: The product of two numbers is \( -24 \).
+What could the two numbers be?
+Answer: \( -10 \) and \( -14 \)
+
+RESPONSE
+Raw: The misconception is that multiplying two negative numbers results in a negative product, when in fact it results in a positive product.
+Top 5 predictions:
+0.8002 | Believes multiplying two positives gives a negative answer
+0.7917 | Believes multiplying two negatives gives a negative answer
+0.7775 | Believes dividing a negative by a negative gives a negative answer
+0.7727 | When multiplying with negative numbers, assumes any negative sign can be ignored
+0.7626 | Believes multiplying a positive by a negative gives a positive answer
+
+ACTUAL, MAP@25: 0.0
+Believes that product means add rather than multiply
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=367, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Reflection
+Question: ![A grid of 7 squares across and 7 squares up. A red vertical line goes from the bottom to the top of the grid, it is 4 squares left from the edge of the grid. An orange rectangle (3 squares width and 2 squares height) is drawn to the left of the red line, with its right-hand side on the red line.  The bottom side of the rectangle is 3 squares up from the bottom of the grid. The bottom left corner of the rectangle is marked with the letter P, which is 3 squares up from the bottom of the grid and 3 squares to the left of the red line. The bottom right corner of the rectangle is marked with the letter Q, which is 3 squares up from the bottom of the grid on the red line. ]() Tom and Katie are discussing reflections
+
+Tom says if you reflect the rectangle in the vertical line, Point \( P \) stays in the same position
+
+Katie says if you reflect the rectangle in the vertical line, Point \( Q \) stays in the same position
+Who is correct?
+Answer: Only Tom
+
+RESPONSE
+Raw: The misconception is that reflecting a shape over a vertical line will leave points on the line of reflection unchanged, when in fact, only points on the line of reflection, like Point \( Q \), remain in the same position, not points off the line like Point \( P \).
+Top 5 predictions:
+0.7751 | Does not understand that a point on the line of reflection will stay the same when reflected 
+0.7696 | Believes a line of reflection must be touching the original shape
+0.7253 | Does not recognise that for a shape to be reflected it will be "flipped"
+0.7110 | Believes that reflection always switches the x and y coordinates
+0.6968 | Believes lines of reflection must be vertical or horizontal
+
+ACTUAL, MAP@25: 0.05
+Fails to reflect across mirror line
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1060, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Properties of Polygons
+Question: The dashes on the sides tell us that this is a \(__________\) polygon
+
+What word completes the sentence? ![A shape with five equal sides. Each side has a small dash through the middle.]()
+Answer: Parallel
+
+RESPONSE
+Raw: The misconception is confusing the concept of equal side lengths, indicated by dashes, with parallelism, which refers to lines that never intersect.
+Top 5 predictions:
+0.6615 | Thinks that only the sides need to be equal for a polygon to be regular
+0.6450 | Believes the arrows for parallel lines mean equal length
+0.6260 | Believes two lines of the same length are parallel
+0.6184 | Thinks that only the angles need to be the same for a polygon to be regular
+0.6151 | Believes a parallelogram has one pair of equal sides
+
+ACTUAL, MAP@25: 0.0
+Does not know the meaning of the word parallel
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=827, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Simplifying Fractions
+Question: Jo and Paul are arguing about simplifying fractions.
+
+Jo says you can never simplify a fraction if either the numerator or denominator is a prime number.
+
+Paul says you will always be able to simplify a fraction if neither the numerator or denominator is prime.
+
+Who is correct?
+Answer: Only
+Jo
+
+RESPONSE
+Raw: The misconception is that a fraction cannot be simplified if it has a prime number as either the numerator or denominator, ignoring that simplification depends on the greatest common divisor between the numerator and denominator, not their primality.
+Top 5 predictions:
+0.7635 | Assumes fractions with prime numerators cannot be simplified
+0.6987 | Does not recognise when a fraction can be simplified
+0.6698 | Does not fully simplify fraction
+0.6463 | Does not recognise when simplifying a fraction may be helpful
+0.6352 | Thinks you can ignore the variable when simplifying algebraic fractions
+
+ACTUAL, MAP@25: 1.0
+Assumes fractions with prime numerators cannot be simplified
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=968, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Plotting Lines from Tables of Values
+Question: This is a part of the table of values for the equation
+\[
+y=10-6 x
+\] \begin{tabular}{|l|l|}
+\hline\( x \) & \( \bigstar \) \\
+\hline\( y \) & \( 0 \) \\
+\hline
+\end{tabular} What should replace the star?
+Answer: \( \frac{6}{10} \)
+
+RESPONSE
+Raw: The misconception is confusing the roles of \( x \) and \( y \) in the equation, leading to incorrectly solving for \( x \) when \( y = 0 \) by dividing the coefficients instead of setting the equation \( 10 - 6x = 0 \) and solving for \( x \).
+Top 5 predictions:
+0.6447 | Believes that the y intercept is where y = 0
+0.6368 | Does not know the y intercept is where the x coordinate is 0
+0.6112 | When solving simultaneous equations graphically, they think the solutions are the y-intercepts
+0.6070 | When solving simultaneous equations graphically, they think the solutions are the x or y intercepts
+0.5995 | Believes that the coefficient of x represents the gradient even when a line is not in the form y = mx+c
+
+ACTUAL, MAP@25: 0.0
+When solving an equation, thinks the divisor and dividend are the opposite way around
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1504, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Laws of Indices
+Question: Which of the following is a power of \( 4 \) ?
+Answer: \( 44 \)
+
+RESPONSE
+Raw: The misconception is confusing the concept of powers of a number with simply multiplying the base number by an integer, rather than raising it to an exponent.
+Top 5 predictions:
+0.7491 | Thinks we have to add the base numbers as well as the powers when multiplying indices
+0.7352 | Thinks multiplying by a number is the same as raising to the power of that number
+0.7318 | Forgets that a number without an indice is to the power of 1 
+0.7125 | Thinks multiplying a variable by a number is the same as raising that variable to the power of that number
+0.7115 | Thinks powers with different bases cannot be equal
+
+ACTUAL, MAP@25: 0.09090909090909091
+Confuses powers and multiples
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=86, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Adding and Subtracting Fractions
+Question: Work out:
+\(
+\frac{4}{11}+\frac{7}{11}
+\)
+Write your answer in its simplest form.
+Answer: \( \frac{1}{2} \)
+
+RESPONSE
+Raw: The misconception is that the student incorrectly simplified the fraction by adding the numerators and denominators separately, rather than correctly adding only the numerators while keeping the common denominator.
+Top 5 predictions:
+0.7160 | Does not find a common denominator when adding/subtracting fractions
+0.7116 | Incorrectly cancels what they believe is a factor in algebraic fractions
+0.7033 | When adding fractions, uses addition of the denominators as a common denominator
+0.7014 | Subtracts numerators when dividing fractions with a common denominator
+0.6976 | When adding fractions, changes to common denominator but leaves numerators the same
+
+ACTUAL, MAP@25: 0.05555555555555555
+When adding fractions, adds the numerators and denominators
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1119, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Length Units
+Question: How should you write \( 5 \) kilometres and \( 7 \) centimetres in metres?
+Answer: \( 5070 \mathrm{~m} \)
+
+RESPONSE
+Raw: The misconception is confusing the conversion of centimetres to metres by incorrectly adding the centimetres directly to the kilometres without converting them to metres first.
+Top 5 predictions:
+0.7072 | Thinks millimetres and centimetres are the same
+0.6538 | Incorrectly converted cm to m
+0.6195 | Has forgotten to convert cm to m
+0.6130 | Does not recognise metres as a unit of length
+0.6024 | Does not recognise millimetres as a unit of length
+
+ACTUAL, MAP@25: 0.5
+Incorrectly converted cm to m
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1078, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Weight Units
+Question: \( 3000 \mathrm{~kg} \) is the same as \( ___ \) tonnes
+Answer: \( 30 \)
+
+RESPONSE
+Raw: The misconception is confusing the conversion factor between kilograms and tonnes, mistakenly thinking that 1 tonne equals 100 kilograms instead of the correct 1 tonne equals 1000 kilograms.
+Top 5 predictions:
+0.7119 | Thinks there are 100kg in a tonne
+0.7036 | Thinks there are 10,000kg in a tonne
+0.6971 | Thinks there are 10kg in a tonne
+0.6773 | Thinks there are 100kg in a ton
+0.6670 | Does not think a ton is a unit of mass
+
+ACTUAL, MAP@25: 1.0
+Thinks there are 100kg in a tonne
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=207, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Expanding Single Brackets
+Question: \(
+x(3 x-5)+6(2 x-3) \equiv P x^{2}+Q x+R
+\)
+
+What is the value of \( R \) ?
+Answer: \( -3 \)
+
+RESPONSE
+Raw: The misconception likely involves incorrectly distributing the constants through the brackets and combining terms, particularly by mistakenly treating the constant terms as if they were affected by the variable terms, leading to an incorrect calculation of the constant term \( R \).
+Top 5 predictions:
+0.6738 | When factorising into double brackets, believes the product of the constants in the brackets is of the opposite sign to the constant in the expanded equation.
+0.6043 | Believes they can ignore the coefficient when expanding double brackets 
+0.5628 | Believes they must expand brackets before solving an equation
+0.5582 | Believes they only need to multiply the first and last pairs of terms when expanding double brackets
+0.5557 | Believes they only need to multiply the first pair of terms when expanding a double bracket.
+
+ACTUAL, MAP@25: 0.1111111111111111
+Only multiplies the first term in the expansion of a bracket
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=369, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Linear Equations
+Question: Jo and Paul are arguing about a first step to solve this equation:
+\(
+\frac{m}{6}-4=24
+\)
+Jo says you can write: \( \frac{m}{6}=28 \)
+Paul says you can write: \( m-4=144 \)
+Who is correct?
+Answer: Neither is correct
+
+RESPONSE
+Raw: The misconception is a misunderstanding of how to isolate the variable by incorrectly applying operations to both sides of the equation, leading to incorrect simplification steps.
+Top 5 predictions:
+0.6330 | Does not understand that when multiplying both sides of an equation by an amount every term must be multiplied by the same amount
+0.6270 | When solving simultaneous equations, believes the terms must be of opposite signs in order to be eliminated.
+0.6262 | When solving an equation forgets to eliminate the coefficient in front of the variable in the last step
+0.6230 | When solving simultaneous equations, thinks they can ignore one of the variables
+0.6156 | When solving an equation thinks they add when in fact they need to multiply
+
+ACTUAL, MAP@25: 0.0
+Does not know how to solve linear equations involving fractions
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1620, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Linear Sequences (nth term)
+Question: What is the 11th term of this sequence? \( u_{n}=2-5 n \)
+Answer: \( -57 \)
+
+RESPONSE
+Raw: The misconception is incorrectly substituting \( n = 10 \) instead of \( n = 11 \) into the formula for the nth term, leading to the calculation of the 10th term instead of the 11th term.
+Top 5 predictions:
+0.7349 | When finding the nth term of a linear sequence, thinks the the first term is the coefficient in front of n.
+0.6603 | Thinks you subtract rather than add when finding the previous term in a descending linear sequence
+0.6473 | Thinks the first term in a sequence is the term before the sequence begins (0th term)
+0.6442 | Thinks the nth term is when the value of the term is n
+0.6390 | Does not recognise that a linear sequence must increase or decrease by same amount
+
+ACTUAL, MAP@25: 0.0
+When subtracting past zero, adds the absolute values and then writes the answer with a negative sign
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1604, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Squares, Cubes, etc
+Question: What is the value of \( 1^{2} \) ?
+Answer: \( 2 \)
+
+RESPONSE
+Raw: The misconception is confusing the operation of squaring a number with doubling it, leading to the incorrect belief that \( 1^{2} \) equals \( 2 \) instead of \( 1 \).
+Top 5 predictions:
+0.7569 | Believes squaring is the same as adding two
+0.7342 | Thinks 1 squared is 2
+0.6859 | Mixes up squaring and multiplying by 2 or doubling
+0.6833 | Thinks multiplying by a number is the same as raising to the power of that number
+0.6818 | Mixes up squaring and multiplying by 2 or doubling, and not square rooted
+
+ACTUAL, MAP@25: 0.0
+Multiplies by the index
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=158, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Averages (mean, median, mode) from a List of Data
+Question: When finding the range of a data set, what is the first step?
+Answer: Add all the numbers together.
+
+RESPONSE
+Raw: The misconception is confusing the process of finding the range with finding the mean, as adding all the numbers together is a step used to calculate the mean, not the range.
+Top 5 predictions:
+0.7799 | Finds the mean instead of the range
+0.6937 | Believes the median is the midpoint of the range
+0.6899 | When asked for the mean of a list of data, gives the median
+0.6885 | Finds the median instead of the range
+0.6635 | Believes you divide 1 by the number of values, rather than the total, when finding the mean
+
+ACTUAL, MAP@25: 1.0
+Finds the mean instead of the range
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=947, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Factors and Highest Common Factor
+Question: Tom and Katie are discussing the conjecture:
+
+All numbers have an even number of factors because factors come in pairs
+
+Tom says a counter-example is \( 24 \)
+
+Katie says a counter-example is \( 16 \)
+
+Who do you agree with?
+Answer: Only Tom
+
+RESPONSE
+Raw: The misconception is that all numbers have an even number of factors, overlooking that perfect squares, like 16, have an odd number of factors because one of the factors is repeated (e.g., \(4 \times 4 = 16\)).
+Top 5 predictions:
+0.6954 | Confuses prime factors and factors
+0.6592 | Believes multiplying together all prime factors gives the highest common factor
+0.6571 | does not realise that the product of prime factors will also be a factor of the original number 
+0.6505 | Gives an example of a factor instead of counting how many total factors a number has
+0.6478 | Does not know that prime numbers have exactly two factors
+
+ACTUAL, MAP@25: 0.0
+Chooses an example when asked for a counter-example
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=313, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Multiplying and Dividing Negative Numbers
+Question: \( 3 \times(-5)= \)
+Answer: \( 15 \)
+
+RESPONSE
+Raw: The misconception is that multiplying a positive number by a negative number results in a positive product, rather than a negative one.
+Top 5 predictions:
+0.8284 | Believes multiplying two positives gives a negative answer
+0.8137 | Believes multiplying a positive by a negative gives a positive answer
+0.8076 | Believes multiplying two negatives gives a negative answer
+0.7997 | When multiplying with negative numbers, assumes any negative sign can be ignored
+0.7991 | Believes dividing a negative by a negative gives a negative answer
+
+ACTUAL, MAP@25: 0.25
+When multiplying with negative numbers, assumes any negative sign can be ignored
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=264, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Inequalities on Number Lines
+Question: Which of the following shows " \( x \) is greater than or equal to \( 6 \) "?
+Answer: \( x \leq 6 \)
+
+RESPONSE
+Raw: The misconception is confusing the symbols for "greater than or equal to" (≥) with "less than or equal to" (≤), leading to the incorrect interpretation of the inequality.
+Top 5 predictions:
+0.7438 | Confuses inequality symbols with equality
+0.7385 | When using inequality notation, thinks "greater than/less than or equal to" symbols are instead the "greater than/less than" symbols and vice versa
+0.7366 | When representing an inequality on a numberline, assumes the filled and unfilled circles have the opposite meaning.
+0.6999 | Believes that 'less than' includes the number 
+0.6864 | Believes they must change the direction of the inequality when dividing through by a positive number.
+
+ACTUAL, MAP@25: 0.125
+Mixes up greater than and less than symbols
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1095, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Standard Form
+Question: \[
+300200
+\]
+Write this number using standard form
+Answer: \( 3.002 \times 10^{6} \)
+
+RESPONSE
+Raw: The misconception is confusing the placement of the decimal point and the power of ten, leading to an incorrect assumption that the number should be expressed with a higher power of ten than appropriate, resulting in \( 3.002 \times 10^{6} \) instead of the correct \( 3.002 \times 10^{5} \).
+Top 5 predictions:
+0.7547 | When writing standard form does not give the correct power of ten
+0.7382 | Believes when writing a number in standard form as an ordinary number you write any digits in the base (omitting the decimal point) and do not account for the power of 10
+0.7201 | Does not realise that in standard form the decimal we use must be between 1 and 10
+0.7196 | When writing a number between zero and one in standard form, thinks the power is the negative of the number of decimal places
+0.7138 | When dividing a number written in standard form by an integer, thinks you divide the power on the ten rather than the number component.
+
+ACTUAL, MAP@25: 1.0
+When writing standard form does not give the correct power of ten
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=118, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Area of Simple Shapes
+Question: What should replace the star to calculate the area of this trapezium?
+ Area \( =\frac{90+40}{2} \times \) \(\color{gold}\bigstar\)
+ ![Trapezium with parallel sides of lengths 90mm and 40mm. The length of one slanted side is 6cm and the perpendicular height is 5cm.]()
+Answer: \( 6 \)
+
+RESPONSE
+Raw: The misconception is confusing the slanted side length with the perpendicular height, which is necessary for calculating the area of a trapezium.
+Top 5 predictions:
+0.8615 | Uses slant height instead of perpendicular height to find area of a trapezium
+0.8607 | Uses slant heights instead of parallel sides to find area of a trapezium
+0.8226 | Thinks you multiply parallel sides to find the area of a trapezium
+0.8170 | Uses only the base and perpendicular height when calculating the area of a trapezium
+0.8040 | Does not recognise the height of a trapezium as the perpendicular length between the parallel sides
+
+ACTUAL, MAP@25: 1.0
+Uses slant height instead of perpendicular height to find area of a trapezium
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=554, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Gradient as change in y over change in x
+Question: If you were to write the equation of this line in the form \( \boldsymbol{y}=\boldsymbol{m} \boldsymbol{x}+\boldsymbol{c} \), what is the value of \( \boldsymbol{m} \) ? ![Graph showing straight line with y intercept (0,0) and x intercept (0,0). Also goes through the point (6,-4)]()
+Answer: \( -\frac{3}{2} \)
+
+RESPONSE
+Raw: The misconception likely stems from incorrectly calculating the gradient by reversing the change in y and change in x, leading to an incorrect slope value.
+Top 5 predictions:
+0.8042 | Believes change in y for gradient is always calculated from the origin, regardless of the y-intercept of the line
+0.7659 | Believes gradient = change in y multiplied by change in x
+0.7632 | Believes gradient = change in x/change in y
+0.7578 | Believes gradient = change in y
+0.7522 | Believes gradient at a point = y coordinate/x coordinate
+
+ACTUAL, MAP@25: 0.3333333333333333
+Believes gradient = change in x/change in y
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=465, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Quadratic Sequences
+Question: Tom and Katie are discussing quadratic sequences.
+
+Tom says this is a quadratic sequence: \( 3,5,10,17,26, \ldots \)
+
+Katie says this is a quadratic sequence: \( 3,6,12,24,48, \ldots \)
+
+Who is correct?
+Answer: Only Tom
+
+RESPONSE
+Raw: The misconception is that Katie incorrectly identifies a geometric sequence, where each term is multiplied by a constant factor, as a quadratic sequence, which actually requires a constant second difference between consecutive terms.
+Top 5 predictions:
+0.6386 | When finding the nth term rule for a quadratic sequence, believes that the coefficient of n squared is the second difference
+0.6340 | When finding the nth term rule for a quadratic sequence, believes that the coefficient of n is half the second difference
+0.6310 | When finding the nth term rule for a quadratic sequence, believes that the coefficient of n squared is determined by first differences
+0.6260 | Thinks a decreasing sequence cannot be quadratic
+0.6153 | Assumes there are only 2 terms in the nth term formula for a quadratic sequence
+
+ACTUAL, MAP@25: 0.0
+Does not understand the term quadratic
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=958, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Squares, Cubes, etc
+Question: Jo and Paul are arguing about powers.
+Jo says \( 9^{4}=3^{8} \)
+Paul says \( 9^{4}=3^{2} \times 3^{2} \)
+Who is correct?
+Answer: Both Jo and Paul
+
+RESPONSE
+Raw: The misconception is that both Jo and Paul misunderstand the properties of exponents, as Jo incorrectly equates \( 9^4 \) with \( 3^8 \) by failing to recognize that \( 9 \) is \( 3^2 \), and Paul incorrectly simplifies \( 9^4 \) to \( 3^2 \times 3^2 \) instead of correctly expressing it as \( (3^2)^4 = 3^8 \).
+Top 5 predictions:
+0.6514 | Thinks multiplying by a number is the same as raising to the power of that number
+0.6205 | Thinks multiplying a variable by a number is the same as raising that variable to the power of that number
+0.6065 | Thinks multiplying by a variable is the same as raising to the power of that variable
+0.6024 | Confuses powers and multiples
+0.6017 | When squaring a variable with a power, thinks that the power is squared rather than doubled. 
+
+ACTUAL, MAP@25: 0.0
+Believes you multiply matching bases when carrying out a multiplication
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1811, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Construct Triangle
+Question: What is the length of the side marked \( q \) ? ![Two, intersecting circles drawn with a compass and used to construct a triangle with one side labelled with q]()
+Answer: \( 2.5 \mathrm{~cm} \)
+
+RESPONSE
+Raw: The underlying misconception is likely a misunderstanding of how to use the intersecting arcs from a compass to determine the correct side length of a triangle, leading to an incorrect assumption or calculation of the length marked \( q \).
+Top 5 predictions:
+0.6228 | Believes constructing a triangle with given SAS requires a compass
+0.6170 | Believes that when constructing triangles, all sides should be measured from the same point
+0.5892 | Does not realise we can find a missing length if we know the base of a parallelogram and its area. 
+0.5781 | Thinks the length of the hypotenuse is the sum of the two shorter sides
+0.5721 | Thinks the missing length has to be half the length of the opposite side
+
+ACTUAL, MAP@25: 0.0
+Estimates a measurement on a diagram rather than working it out
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=405, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Sharing in a Ratio
+Question: To make green paint, you mix blue paint with yellow paint in the ratio \( 5: 3 \).
+What should replace the star? \begin{tabular}{|c|c|c|}
+\hline Blue & Yellow & Total \\
+\hline \( \mathrm{1500 ml} \) & \( \bigstar \) 
+\hline
+\end{tabular}
+Answer: \( 1502 \mathrm{ml} \)
+
+RESPONSE
+Raw: The misconception is that the person incorrectly believes that the amount of yellow paint should be slightly more than the given amount of blue paint, rather than calculating the correct proportion based on the given ratio.
+Top 5 predictions:
+0.6103 | Thinks a greater number of shaded parts represents a greater fraction
+0.6067 | Believes a smaller number of shaded parts represents a smaller fraction
+0.5841 | Believes a proportion of a whole is whole/part not part/whole
+0.5825 | Assumes a ratio is part to part instead of part to whole
+0.5768 | Believes that a greater percentage represents a greater quantity
+
+ACTUAL, MAP@25: 0.05555555555555555
+Thinks a difference of one part in a ratio means the quantities will differ by one unit
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=826, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Mental Multiplication and Division
+Question: \( 9.4 \times 50= \)
+Answer: \( 4700 \)
+
+RESPONSE
+Raw: The misconception is likely due to incorrectly treating the multiplication as \( 94 \times 50 \) instead of \( 9.4 \times 50 \), leading to a misplaced decimal point in the final answer.
+Top 5 predictions:
+0.6627 | When multiplying decimals, multiplies rather than divides when reinserting the decimal.
+0.6550 | When multiplying a decimal less than 1 by an integer, gives an answer 100 times smaller than it should be
+0.6467 | When performing mental multiplication, multiplies accurately by a multiple of 10 but then does not know how to adjust their answer 
+0.6433 | Multiplies instead of divides by 100 when converting a percentage to a decimal
+0.6382 | Divides instead of multiplies when multiplying by a decimal
+
+ACTUAL, MAP@25: 0.125
+When multiplying a decimal by an integer, ignores decimal point and just multiplies the digits
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1350, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Written Multiplication
+Question: If you use the grid method to calculate \( 27 \times 42 \) what should replace the star? \begin{tabular}{|c|c|c|}
+\hline\( \times \) & \( 20 \) & \( 7 \) \\
+\hline \( 40 \) & \(\space\) & \(\color{gold}\bigstar\)\\
+\hline \( 2 \) & \(\space\) & \\
+\hline
+\end{tabular}
+Answer: \( 2800 \)
+
+RESPONSE
+Raw: The misconception likely involves misunderstanding the place value and the multiplication process within the grid method, leading to the incorrect multiplication of \( 40 \times 7 \) as \( 2800 \) instead of correctly calculating it as \( 280 \).
+Top 5 predictions:
+0.7435 | Adds a zero onto the end of units multiplied by units when solving multiplication problems using the grid method
+0.7040 | Subtracts instead of multiplies when using grid method
+0.6876 | Adds instead of multiplies when using grid method
+0.5820 | Forgets to carry the tens when doing column multiplication
+0.5720 | Counts half-squares as full squares when calculating area on a square grid
+
+ACTUAL, MAP@25: 0.0
+When multiplying by a multiple of 10, gives an answer 10 times bigger than it should be
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=304, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: BIDMAS
+Question: \[
+1+2 \times(3-4)=
+\]
+
+Which calculation should you do first?
+Answer: \( 1+2 \)
+
+RESPONSE
+Raw: The misconception is a misunderstanding of the order of operations, where addition is incorrectly prioritized over multiplication, instead of correctly performing the operation inside the parentheses first, followed by multiplication before addition.
+Top 5 predictions:
+0.7688 | Confuses the order of operations, believes addition comes before multiplication 
+0.7569 | Applies BIDMAS in strict order (does not realize addition and subtraction, and multiplication and division, are of equal priority)
+0.7178 | Confuses the order of operations, believes addition comes before division
+0.7151 | Believes addition comes before indices, in orders of operation
+0.7040 | Confuses the order of operations, believes subtraction comes before multiplication 
+
+ACTUAL, MAP@25: 0.0
+Carries out operations from left to right regardless of priority order
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=522, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Time
+Question: \( 5 \) hours \( +500 \) minutes \( = \)
+Answer: \( 10 \) hours
+
+RESPONSE
+Raw: The misconception is failing to correctly convert minutes into hours, as 500 minutes is incorrectly assumed to be equivalent to 5 hours instead of the correct conversion of 8 hours and 20 minutes.
+Top 5 predictions:
+0.6701 | Thinks there are 1000 seconds in an hour
+0.6394 | When solving time problems, finds the difference in the hours and the difference in the minutes but then assumes the minutes will be added on to the number of hours
+0.6381 | Gets the minutes and hours the wrong way around
+0.6301 | Answers as if there are 100 minutes in an hour when changing from hours to minutes
+0.6177 | Converted hours to minutes instead of hours to seconds
+
+ACTUAL, MAP@25: 0.25
+Answers as if there are 100 minutes in an hour when changing from hours to minutes
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1253, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Dividing Fractions
+Question: What should replace the question mark? ![A bar split into 5 equal parts. Four parts are shaded pink. The total length of the shaded parts is labelled 4/5. One shaded part is labelled with a question mark.]()
+Answer: \( 1 \)
+
+RESPONSE
+Raw: The misconception is thinking that dividing the whole (4/5) by the number of parts (4) gives the value of one part, rather than recognizing that each part represents 1/5 of the whole.
+Top 5 predictions:
+0.7020 | Thinks if you multiply a fraction by itself you get a whole
+0.6736 | When dividing by a non unit fraction, thinks you multiply by the reciprocal of the corresponding unit fraction rather than the fraction given. 
+0.6720 | Confuses the part and the whole in fraction of an amount problems
+0.6633 | When dividing an integer by a fraction, thinks they can just multiply instead.
+0.6616 | When dividing a fraction by an integer, thinks they can just multiply instead
+
+ACTUAL, MAP@25: 0.0
+Does not understand what each part of a bar model represents as a fraction
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=746, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: BIDMAS
+Question: \( 4+12 \div(2+2)= \)
+Answer: \( 10 \)
+
+RESPONSE
+Raw: The misconception is failing to apply the order of operations correctly by performing the addition before the division.
+Top 5 predictions:
+0.7745 | Applies BIDMAS in strict order (does not realize addition and subtraction, and multiplication and division, are of equal priority)
+0.7710 | Confuses the order of operations, believes addition comes before division
+0.7138 | Confuses the order of operations, believes addition comes before multiplication 
+0.7038 | Confuses the order of operations, believes subtraction comes before multiplication 
+0.6732 | Performs addition ahead of division
+
+ACTUAL, MAP@25: 0.0
+Carries out operations from left to right regardless of priority order
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=542, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Writing Expressions
+Question: Which of the following is the most appropriate word to describe: \( 6-3 g \)
+Answer: Variable
+
+RESPONSE
+Raw: The misconception is confusing the entire expression with a single component, mistakenly identifying the expression itself as a "variable" rather than recognizing it as an algebraic expression involving a variable.
+Top 5 predictions:
+0.7049 | Confuses an expression with a term
+0.6762 | Confuses a term with a variable
+0.6755 | Confuses an expression with a variable
+0.6605 | When substituting into an algebraic term, replaces variables with numbers without multiplying.
+0.6494 | When substituting into an algebraic term, believes they can disregard the coefficient
+
+ACTUAL, MAP@25: 0.3333333333333333
+Confuses an expression with a variable
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1115, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Quadratic Equations
+Question: One of these quadratic equations will give no real solutions.
+Which one?
+Answer: \( \frac{-6 \pm \sqrt{1200}}{3} \)
+
+RESPONSE
+Raw: The misconception is confusing the discriminant's role in determining the nature of solutions, as a positive discriminant (like 1200) indicates two real solutions, not no real solutions.
+Top 5 predictions:
+0.8014 | Believes the discriminant must be a perfect square for an equation to have real solutions
+0.7546 | Believes that a discriminant of 0 means there are no real solutions
+0.6496 | Thinks the sign of solutions in a quadratic equation is always the same as the constant term
+0.6178 | Believes the solutions of a quadratic equation are the negative of the absolute values of the constants in the factorised form
+0.5928 | Believes the solutions of a quadratic equation are the constants in the factorised form
+
+ACTUAL, MAP@25: 1.0
+Believes the discriminant must be a perfect square for an equation to have real solutions
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1719, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Factors and Highest Common Factor
+Question: Which of these is not a factor of \( 12 \) ?
+Answer: Twelve
+
+RESPONSE
+Raw: The misconception is that a number cannot be a factor of itself, leading to the incorrect belief that twelve is not a factor of twelve.
+Top 5 predictions:
+0.6896 | Believes 1 is not a factor of a number
+0.6861 | Does not think a number can be a factor of itself
+0.5906 | Confuses prime factors and factors
+0.5862 | Does not think a number can be a multiple of itself
+0.5763 | Believes that repeated prime factors are only counted once
+
+ACTUAL, MAP@25: 0.5
+Does not think a number can be a factor of itself
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1790, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Area of Simple Shapes
+Question: What is the area of this shape? ![A square cm grid showing a shape made up of 3 small squares.]()
+Answer: \( 20 \)
+
+RESPONSE
+Raw: The underlying misconception is likely that the person incorrectly counted the number of squares or miscalculated the area by assuming each small square represents a larger unit, such as 10 cm², instead of 1 cm².
+Top 5 predictions:
+0.7257 | Miscounts the area of a shape when there are half squares
+0.7248 | Underestimates the area of shapes when counting squares when some squares are neither wholes nor halves
+0.6558 | Thinks measures of area must end in squared
+0.6351 | Does not understand that the area of an enlarged shape is the area of the original multiplied by the square of the scale factor of the lengths.
+0.6345 | Does not know units of area should be squared
+
+ACTUAL, MAP@25: 0.0
+Finds the area of the whole grid instead of the shaded shape
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=914, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Parts of a Circle
+Question: The straight line shown in this diagram is a ....? ![A circle with a line across from edge to edge, passing through the centre]()
+Answer: Circumference
+
+RESPONSE
+Raw: The misconception is confusing the term "circumference," which is the perimeter or boundary line of a circle, with "diameter," which is the straight line passing through the center of the circle from one edge to the other.
+Top 5 predictions:
+0.7938 | Confuses circumference and diameter
+0.7628 | Confuses circumference and radius
+0.7321 | confuses circumference and area
+0.7250 | Confuses diameter and radius
+0.7159 | Thinks circumference is radius x pi
+
+ACTUAL, MAP@25: 1.0
+Confuses circumference and diameter
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1057, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Factorising into a Single Bracket
+Question: Factorise this expression, if possible:
+\(
+p^{2}+100 p
+\)
+Answer: \( (p+10)(p+10) \)
+
+RESPONSE
+Raw: The misconception is confusing the process of factorising by taking out the greatest common factor with incorrectly applying the formula for perfect square trinomials, leading to the incorrect assumption that \( p^2 + 100p \) can be expressed as a square of a binomial.
+Top 5 predictions:
+0.5647 | When completing the square, believes a coefficient of x^2 does not affect the value of the constant inside the bracket
+0.5583 | When completing the square, believes the constant in the bracket is double the coefficient of x
+0.5534 | Believes that when factorising a quadratic with a coefficient of x squared, the two constants in the brackets still add to give the coefficient of x
+0.5518 | When factorising a quadratic without a non variable term, tries to double bracket factorise
+0.5493 | Believes they can factorise a difference of two squares by placing the constant in both brackets without square rooting
+
+ACTUAL, MAP@25: 0.25
+When factorising a quadratic without a non variable term, tries to double bracket factorise
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=705, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Rounding to the Nearest Whole (10, 100, etc)
+Question: A number rounds to \( 20,000 \) when rounded to the nearest ten thousand, thousand and hundred.
+Which number could this be?
+Answer: \( 20074 \)
+
+RESPONSE
+Raw: The misconception is that the person incorrectly believes that rounding \( 20074 \) to the nearest thousand and hundred would result in \( 20,000 \), not recognizing that \( 20074 \) rounds to \( 21,000 \) when rounded to the nearest thousand and to \( 20,100 \) when rounded to the nearest hundred.
+Top 5 predictions:
+0.6972 | Believes that rounding must change the number
+0.6470 | Believes rounding numbers down would give an overestimate
+0.6454 | Rounds incorrectly when the nearest 10 is a multiple of 100
+0.6275 | Rounds to the wrong degree of accuracy (1 decimal place rather than nearest whole number)
+0.6266 | Believes rounding to 1 decimal pleace means rounding to the nearest integer, regardless of the value of the number
+
+ACTUAL, MAP@25: 0.0
+Rounds down instead of up
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1169, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Place Value
+Question: What number is \( 100 \) more than \( 28902 ? \)
+Answer: \( 28,002 \)
+
+RESPONSE
+Raw: The misconception is confusing the place value of the hundreds digit with the thousands digit, leading to an incorrect subtraction of 1000 instead of adding 100.
+Top 5 predictions:
+0.6565 | Thinks the hundred thousands column is the ten thousands column
+0.6526 | Confuses the hundreds and tens place value columns
+0.6464 | Mistakes the place value column of hundred thousands with millions
+0.6395 | Confuses the ten thousands and thousands place value columns
+0.6373 | Confuses the hundreds and thousands place value columns
+
+ACTUAL, MAP@25: 0.0
+When two digits sum to 10 or more during an addition problem, does not add one to the preceding digit
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1097, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Linear Sequences (nth term)
+Question: What is the first term of the sequence given by this rule:
+\[
+4 n+3
+\]
+Answer: \( 4 \)
+
+RESPONSE
+Raw: The misconception is confusing the coefficient of \( n \) in the expression \( 4n + 3 \) with the first term of the sequence, rather than correctly substituting \( n = 1 \) into the expression to find the first term.
+Top 5 predictions:
+0.7339 | When finding the nth term of a linear sequence, thinks the the first term is the coefficient in front of n.
+0.6358 | When finding the nth term rule for a quadratic sequence, believes they only need to use the first term to calculate the coefficient of n 
+0.6118 | Thinks the nth term is when the value of the term is n
+0.5994 | Does not recognise that a linear sequence must increase or decrease by same amount
+0.5990 | Thinks you subtract rather than add when finding the previous term in a descending linear sequence
+
+ACTUAL, MAP@25: 1.0
+When finding the nth term of a linear sequence, thinks the the first term is the coefficient in front of n.
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1144, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Substitution into Formula
+Question: When \( h=5 \)
+\(
+h^{2}=
+\)
+Answer: \( 7 \)
+
+RESPONSE
+Raw: The misconception likely involves confusing the operation of squaring with addition, leading to the incorrect calculation of \( h^2 = 5 + 2 \) instead of \( h^2 = 5 \times 5 \).
+Top 5 predictions:
+0.5762 | Mixes up squaring with dividing by 2
+0.5670 | Uses base instead of height as h in area of a trapezium formula
+0.5554 | Misremembers the quadratic formula
+0.5526 | Mixes up squaring and multiplying by 2 or doubling, and not square rooted
+0.5389 | Believes h in the formula for area of a trapezium stands for half the sum of the parallel sides
+
+ACTUAL, MAP@25: 0.16666666666666666
+Believes squaring is the same as adding two
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=480, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Place Value
+Question: What number is \( 100 \) more than \( 72980 ? \)
+Answer: \( 73,980 \)
+
+RESPONSE
+Raw: The misconception is confusing the addition of 100 with changing the hundreds place digit, leading to the incorrect assumption that adding 100 to 72980 results in 73980 instead of correctly adding to get 73080.
+Top 5 predictions:
+0.6956 | When adding, just writes the digit to the right of the number without considering place value
+0.6579 | Ignores place value when adding a whole number and a decimal
+0.6564 | When adding decimals, does not keep place value the same as the original digits
+0.6496 | When adding decimals, just adds the digits and ignores place value
+0.6277 | When two digits sum to 10 or more during an addition problem, does not add one to the preceding digit
+
+ACTUAL, MAP@25: 0.0
+When adding powers of 10 adds onto the wrong column
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1559, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Congruency in Other Shapes
+Question: Tom and Katie are discussing congruent shapes Tom says these two shapes are congruent ![Two identical 6-sided "L shape" polygons. One of the polygons has been rotated through 90 degrees.]() Katie says these two shapes are congruent ![Two 6-sided "L shape" polygons. One of the polygons has a wider upright section than the other.]() Who is correct?
+Answer: Only Katie
+
+RESPONSE
+Raw: The misconception is that congruent shapes must have the same orientation or appearance rather than being identical in size and shape regardless of rotation or reflection.
+Top 5 predictions:
+0.7979 | Thinks congruent shapes are the same shape but can be different sizes
+0.7942 | Does not understand that shapes are congruent if they have the same size and shape
+0.6201 | Does not understand that similar shapes and enlarged shapes will have the same size angles as the original
+0.6070 | Does not know that a reflection would not change the size of the shape
+0.5932 | Does not understand that all angles and sides must be equal for regular shapes
+
+ACTUAL, MAP@25: 1.0
+Thinks congruent shapes are the same shape but can be different sizes
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1089, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Place Value
+Question: What number is \( 10,000 \) less than \( 509,570 \) ?
+Answer: \( 409,570 \)
+
+RESPONSE
+Raw: The misconception is confusing the place value of digits, leading to incorrectly subtracting \( 10,000 \) from the hundred-thousands place instead of the ten-thousands place.
+Top 5 predictions:
+0.6935 | Treats zero as a ten when subtracting
+0.6883 | Thinks the hundred thousands column is the ten thousands column
+0.6683 | Out by 10 when subtracting
+0.6593 | Does not realise we can borrow from the preceding digit in a subtraction problem
+0.6558 | When “borrowing” during a subtraction problem, does not subtract one from the preceding digit
+
+ACTUAL, MAP@25: 0.04
+When subtracting a power of 10, subtracts from the wrong column
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1783, AnswerOption=C
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Multiplying and Dividing with Decimals
+Question: \( 0.8^{2}= \)
+Answer: \( 0.16 \)
+
+RESPONSE
+Raw: The misconception is confusing squaring a decimal with multiplying the decimal by 2, leading to the incorrect belief that \( 0.8^2 \) is the same as \( 0.8 \times 2 \) instead of \( 0.8 \times 0.8 \).
+Top 5 predictions:
+0.7276 | When finding the square root of a decimal, believes the answer should have the same number of decimal places
+0.7130 | Believes multiplying by 0.1 is the same as multiplying by 10
+0.7042 | Confuses square rooting and halving the number
+0.6969 | Mixes up squaring and halving
+0.6878 | Believes squaring a fraction requires you to double both parts
+
+ACTUAL, MAP@25: 0.14285714285714285
+Mixes up squaring and multiplying by 2 or doubling
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=436, AnswerOption=D
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Adding and Subtracting Negative Numbers
+Question: \( (-5)+(-2)= \)
+Answer: \( -3 \)
+
+RESPONSE
+Raw: The misconception is that the person incorrectly believes that adding two negative numbers results in a less negative (or more positive) number, rather than a more negative number.
+Top 5 predictions:
+0.7809 | When a subtraction of one positive number from another, results in a negative answer, they believe the answer is the sum of those 2 numbers with a negative sign put in front.
+0.7358 | When adding negatives believes that they can just add their absolute values and add a negative sign to the answer
+0.7357 | Believes that adding a negative will increase the value of the original number
+0.7128 | Believes that adding a positive to a negative makes your answer more negative
+0.7104 | Thinks multiplying two or more negative numbers together always gives a positive answer, regardless of how many negative numbers there are in the sum
+
+ACTUAL, MAP@25: 0.3333333333333333
+Believes that adding a negative will increase the value of the original number
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=1169, AnswerOption=A
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Place Value
+Question: What number is \( 100 \) more than \( 28902 ? \)
+Answer: \( 2,890,200 \)
+
+RESPONSE
+Raw: The misconception is confusing place value by mistakenly adding two zeros to the number instead of correctly adding 100 to the hundreds place.
+Top 5 predictions:
+0.6646 | Confuses the hundreds and tens place value columns
+0.6504 | Thinks decimal place value works the same as integer place value, ones will follow tenths
+0.6447 | The student does not understand the place value of 3-digit numbers
+0.6289 | Ignores place value when adding a whole number and a decimal
+0.6279 | Confuses the hundreds and thousands place value columns
+
+ACTUAL, MAP@25: 0.0
+Multiplies rather than adds when given the command word 'more'
+
+----------------------------------------------------------------------------------------------------
+
+QuestionID=275, AnswerOption=B
+
+PROMPT
+Given the following question and incorrect answer option, identify the underlying misconception that would cause someone to arrive at the answer and output it as your response in one sentence.
+Subject: Adding and Subtracting with Decimals
+Question: \( 50.09-0.1= \)
+Answer: \( 50.99 \)
+
+RESPONSE
+Raw: The misconception is likely due to incorrectly aligning the decimal points, leading to the subtraction being performed as if it were \( 50.09 + 0.90 \) instead of \( 50.09 - 0.10 \).
+Top 5 predictions:
+0.6746 | When subtracting decimals with a different number of decimal places, lines up the digits incorrectly
+0.6572 | Adds instead of subtracts when asked to find the difference
+0.6456 | Out by 10 when subtracting
+0.6384 | Subtracts instead of adding when asked to find a total
+0.6354 | Does not compensate when subtracting
+
+ACTUAL, MAP@25: 0.04
+When “borrowing” during a subtraction problem, does not subtract one from the preceding digit
+

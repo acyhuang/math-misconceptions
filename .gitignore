@@ -1,5 +1,5 @@
 .DS_Store
-models/
+trained_models/
 .env
 kaggle/
 .venv
